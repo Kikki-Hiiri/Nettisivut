@@ -1,48 +1,41 @@
+<!DOCTYPE html>
 <html>
 <head>
     <title>Tommin sivut</title>   
-    <link rel="Stylesheet" href="tyyli.css"> 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
+    <link rel="stylesheet" href="tyyli.css"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script defer src="script.js"></script> <!-- For navbar toggle -->
 </head>
-<nav class="navbar navbar-inverse">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <a class="navbar-brand" href="#">WebSiteName</a>
-      </div>
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">Shop </a></li>
-        <li><a href="#">Basketball</a></li>
-        <li><a href="#">Upcoming matches</a></li>
-      </ul>
-    </div>
-  </nav>
-
 <body>
-    <h1>Tommin sivut</h1>
-    <p>
-        Lorem ipsum dolor <b>sit</b> amet consectetur <i>adipisicing elit</i>. Debitis perspiciatis suscipit explicabo repellat pariatur deserunt quidem dicta earum dolore. Quaerat nihil labore mollitia eligendi voluptatem earum numquam soluta ex molestias.
-    </p>
-    <h2>Osaaminen</h2>
-    <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum harum perferendis tenetur voluptas vitae delectus pariatur dolorum ratione! Ratione maiores eaque nobis debitis minus, id quaerat ipsum ab ipsa rem.
-    </p>
-    <h2>Ohjelmointikielet</h2>
-    <ul>
-        <li>Java</li>
-        <li>HTML</li>
-        <li>CSS</li>
-    </ul>
-    <h2>Tiedot</h2>
-    <p>
-        Tommi Malinen  <br> 
-        04400 Järvenpää
-    </p>
+    <!-- Custom Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header">
+                <button class="navbar-toggle">☰</button>
+                <a class="navbar-brand" href="#">WebSiteName</a>
+            </div>
+            <ul class="nav-links">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Basketball</a></li>
+                <li><a href="#">Upcoming matches</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>Tommin sivut</h1>
+        <p>Lorem ipsum dolor <b>sit</b> amet consectetur <i>adipisicing elit</i>...</p>
+        <h2>Osaaminen</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+        <h2>Ohjelmointikielet</h2>
+        <ul>
+            <li>Java</li>
+            <li>HTML</li>
+            <li>CSS</li>
+        </ul>
+        <h2>Tiedot</h2>
+        <p>Tommi Malinen <br> 04400 Järvenpää</p>
+    </div>
 </body>
-
-
-
 </html>
