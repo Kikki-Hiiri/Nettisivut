@@ -1,15 +1,92 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
 body {
-    background-color: White;
+    background-color: white;
+    line-height: 1.6;
 }
 
-h1 {
-    font-family: 'Gill Sans';
-    color: #0CAFFF;
-    font-size: 36px;
+/* Navbar Styling */
+.navbar {
+    background-color: #333; /* Dark background for navbar */
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
-h2 {
-    font-family: 'Gill Sans';
-    color: #0CAFFF;
-    font-size: 26px;
+.navbar-brand {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    padding: 8px 12px;
+    transition: background 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: #444;
+    border-radius: 5px;
+}
+
+.active a {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+/* Navbar Toggle Button (Mobile) */
+.navbar-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 50px;
+        right: 20px;
+        width: 200px;
+        text-align: center;
+        border-radius: 5px;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .navbar-toggle {
+        display: block;
+    }
 }

@@ -3,6 +3,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const navLinks = document.querySelector(".nav-links");
 
     toggleButton.addEventListener("click", function () {
-        navLinks.style.display = navLinks.style.display === "block" ? "none" : "block";
+        navLinks.classList.toggle("show"); // Add or remove the "show" class
     });
 });
